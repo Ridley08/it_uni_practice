@@ -1,0 +1,14 @@
+<svg id="menu.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="66" viewBox="0 0 50 66">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 29.656px;
+        fill: #077ec9;
+        text-anchor: end;
+        font-family: 07LogoTypeGothic7;
+      }
+    </style>
+  </defs>
+  <text id="メニュー_" data-name="メニュー " class="cls-1" transform="matrix(0.36, 0, 0, 0.364, 45.055, 64.684)">メニュー</text>
+  <image id="メニューのフリーアイコン12" width="50" height="49" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAxCAYAAACYq/ofAAADQklEQVRogd2aW4hNURjHf3MM4zLIJWmaXCMkHkakjFvKE0+GcnmQB8kQyqVoGFEuhcxM8iDlMg+GF15FjBJRkgfXGaTJgxRm3GdGa/rOac+Zc9bZa81e++ztV6emffZe+/8/863b962CoqoHBMQwYAFQBkwFxgHDgcFAB9AKfAZeAy8A9eJGud5rCnvZwAhgFbAWmAMkNPeOAiYAszzX2oG7wAXgGvDNVojuxTrGADXAB6AOmGvZVh9gEXBe2joCjAzDyADgEPAKqAT627w0C0OA3UAzsNM0WkyMzAaeAXuBfkEoz0IxcAx4DEzx+5BfI1uAexLjYTEDeASsDsJIAXACOA30DdFEkkHAZQk1LbmMqI68PRTJelSoHdDdoTNSDWwKUWwu9uv0ZDOyAqhyKMqWWpl0e5DJiOrQ5yJoAtFbn2muyWTkrIzpUaVEBiCtkQpgSYRNJFkHlHsvJNL+PpwXWXZ00+o1shKY5LPJOzLHuPi886mh3NvxvUY2B/uDhUJKc9LIeGBeDI0sB4biMVKRXz3WFAHL8CyVFxu2pDZHTxyJKzG8X42ylwplc2MaVmoxN9PwGVfMR0JrrAiLK6p/D0yYbF4izGQVWqMt9L2RBZwLqiQjY0JJoeW6SiUKTjkyss3CSHFC9shxp6uPBJIgyzPfVWh9tdBQKiHgAptQb1VGPlo8OBE46ciIDS0qtJ5HSJAtLxOybG6Lp/4umpN9pF2Sb0sNHm6TrLoLphnm0FQSPLVovGVoRGUAFzoy8laWTX65iWcZ3+BIlGt+ATe8RpolvOLGdeALaVvduhgaSWn2GrkidQ8/qE1/p6OP3/7RKEmQHkY6pPYRF7ppTU/QNSRHgYhzUf4jWY0oNlquv8KiBdiR/q5MRpqADRE10SEVrE/pX2QrK1wFDrrXZUylt4N70RV6VGHlTIRMVOv05CoBq5TkzwiU33YBx3U35KohdkrH2gr8CVabL9TidE0uExiUp2skidfkXnuKp5LRrPdzs8mBgYfAdKlL/O6dRi2tEkplJps+0yMcP4B9Ukeplf4TFGruOiqZQxVKf03atT1U815OQ5TKgHBfxnhT1KbuNrBe2tqTaY7ww/9xXgv4B+vzojhWwljPAAAAAElFTkSuQmCC"/>
+</svg>

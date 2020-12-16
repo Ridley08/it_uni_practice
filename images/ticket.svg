@@ -1,0 +1,14 @@
+<svg id="ticket.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="66" viewBox="0 0 49 66">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 29.656px;
+        fill: #077ec9;
+        text-anchor: end;
+        font-family: 07LogoTypeGothic7;
+      }
+    </style>
+  </defs>
+  <text id="チケット" class="cls-1" transform="matrix(0.36, 0, 0, 0.364, 46.972, 64.684)">チケット</text>
+  <image id="チケットのアイコン8" width="49" height="49" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAEvUlEQVRogc2aaWwVVRiGn9qiUtQiERWNiLKJKIqCVTHKFv0jkChQRWPEAIlxQ0EooRCj/HAJrj80IagU3FCjRDAEQlzBGhcWBdwQghogGMFaFqVQ8pX34HQ4t3N7b+/MvMnN9N45M/O9c877badFJ8z8koRRDtwPXAucCKwFXgFeBxqyMe24BO0/H1gI1ABjgA76fQiwAHgPOD6bGyVB4lRgNvADMAr4FbgVKAM6Av2B74ERwKPZ3DBOEvZWHwQ2AQ8BdTr2At4E6jXua2Ao8JfOd4+6cRwkioCRwEbgaeAkHbsCzwD/ea7ZoVloAzwe9YBCk7gK+Bx4Wxqw4wXAJGBXxLUvAj8DNwHXNDewUCScaFcBV0u8ZshoaSAb2AxN1bjZmtFYSIRFuxmoEJGVOdzPPNSPwBUSvxclrWS8ifYeYIaI7AZmAS9kWPPZ4hGgp0R/ViFJ3Aw8IaEeAJ4FHpN3yQenA1V6IRY7vi0EiXItnQH6/q7W8KY8jXfoBxQDbzRHgBw1cZ78eo0IONGObEUChu069gnY2RYYHB7Ykplor+m9Txow0VbKbWaV47QQq/WxF/UpsAEYpqjeW4JvRDYzYQY/oLds/n0vMFn+fmGBCKD7jggQGQ+cqSX2ZHBgFAkT7XqJ9WQdu0oL+XidbPEbcDlwKTAQ6AT8BAwHrosiUa5I+w7QTaLtpdwnX6/TUjQoPf9EOpmi648GwDCJLjGJNh8sAj7WDN0WJlGhFLjCE2nbKXidkhIikzVDliQWOxLmk+dLxJUe0R4U68oEDQ/iG2CZ3H1/R8KlveMUfcOi3Q9MkybOSc72JqjRl84lihVD5AnmN3PRW0Ap8GfMxmaCe5m7SlSk2DLaEuHz7dzLydncBKcBtwB7gC+MRK0++wKjzAffC/TVBUmjTvHBGgjVWg0vKTmscy2b54CngN+VgVbJaNPCvykgUawVY/hI6cc+xYmDLncywR5S4VGlGncCsESeKQ3oo7c/SHXKXc6mcPNso4oQi9hfpcT4ICz1+c48kgLzVkLB7gzFh1URBNpL5F1iM/1//APM0zIa6H4Nk0BeKs1w9nXwkXB/16ecxDFhIJfy9G81A2pbx6b8kQuJBvnn1CCXGtsy2vfVjUgCx9jsI3EH8JmqKR/aqGwsjZnAlYDFg7nhE8HltFOV3CUqhKzwuEhRPGlY7FqhF2exbFuwSAvOxB9qPfZQ6Vemrl4Y1igYG3M2O1EEpgMXKuv+wEciCJeS9/Ccs1rjVSVlccHZscD3vEwkKnT8xXPO0vY7AwlZHHBLZ3QUibM1A+tUxdVqjyCMUm0MxpmiP6+M2jLtNVpKw3wkrLN2O3CxcqdBKUpBrIFxvVo35nhuVP+rEb7lVK39gExN3Hr1gPYXzmYvnNufED7pi9hRbcm6YAaZAA6EH5lLxC5SOp7kHngT5GJImTYNOxfQrhYhSMIto9baAosNQRI7dDw35TY7+442toMktmvfeIBaNZng6omtsZp+BO2UoCJv1YiwJmZJuIuBGzJoxtUThwpscBiWBH6oPfLX1PRuRHj9VyvYWdd5qQrzuPcjfLC9Ole/2L7J3cFBPhE/DCxXB/AyudOkYUmnbTHY/0DNaRIrgMOuqP9Q3SX0pgAAAABJRU5ErkJggg=="/>
+</svg>

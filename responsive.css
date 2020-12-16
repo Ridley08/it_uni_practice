@@ -1,0 +1,215 @@
+/*ヘッダー*/
+
+@media all and (max-width: 1000px) {
+    .menu{
+      display:none;
+    }
+  }
+  
+  @media all and (max-width: 560px) {
+    .menu{
+      display:block;
+    }
+    
+    #header-right{
+      display:none;
+    }
+  }
+  @media all and (max-width: 296px) {
+    #header-left{
+      display:none;
+    }
+
+  }
+
+  /* 本日の営業時間、チケット情報、本日のプログラム */
+    
+  @media all and (max-width: 560px) {
+
+    #subheading-wrapper{
+      padding: 0;
+      
+      
+  }
+    .subheading{
+      padding:0;
+      width: 560px;
+    }
+
+    .subheading dt{
+      font-size: 16px;
+      padding-bottom: 22px;
+  }
+  
+    .subheading dd{
+        font-size: 22px;
+    }
+
+  }
+
+  /*　おすすめ情報　*/
+  @media all and (max-width: 560px) {
+    .recommendation{
+      padding-top:18px;
+      padding-bottom: 18px;
+      margin-bottom: 0px;
+    }
+  }
+
+    /* ニュース */
+    @media all and (max-width: 900px) {
+      #news-wrapper{
+      border:none;
+      background:none;
+      margin:0 ;
+      left:0;
+      padding:0;
+       padding-left: 0;
+       width: 100%;
+   
+      }
+
+      #news{
+    
+       
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-size: 28px;
+        padding:0 ;
+        margin:10px 0;
+        width: 50%;
+        height: auto;
+      
+      }
+    
+
+      #news-txt dt{
+
+        float : none;
+        clear: none;
+         padding-top: 30px;
+         padding-left: 40px;
+      }
+
+      #news-txt dt:first-child{
+        padding-top: 54px;
+      }
+
+      #news-txt dd{
+        padding-bottom: 0px;
+        margin-right: 0;
+        padding-left: 0;
+        margin-left:0;
+        text-align: center;
+         width: 100%;
+      }
+
+      #news-seemore{
+        font-size: 16px;
+        margin-right: 30px;
+         float: right;
+         clear: both;
+         font-weight: bold;
+         text-decoration: underline;
+         padding-right: 0;
+         text-align: center;
+     }
+    }
+
+      /*　モデルコース　*/
+  @media all and (max-width: 640px) {
+
+
+    .model{
+      display: block;
+      flex-wrap: nowrap;
+    }
+
+    .model img{
+      width: 75%;
+      margin:0 0 0 12%;
+    }
+
+    .model-big{
+      font-size:33px;
+      padding-left: 10px;
+      padding-top:20px;
+      float: left;
+    }
+
+
+    .model-big span{
+      font-size:40px;
+     
+    }
+
+    .model-course{
+      font-size:33px;
+      padding-right: 30px;
+      text-align: right;
+      float: right;
+     
+  }
+
+  .model-small{
+    font-size: 16px;
+    clear: both;
+}
+
+.model-seemore{
+  font-size: 20px;
+}
+
+.model-big-reverse{
+  font-size:33px;
+  padding-left: 30px;
+  padding-top:20px;
+}
+
+ 
+.model-big-reverse span{
+  font-size:40px;
+}
+
+.model-big-course-reverse{
+  font-size:33px;
+  padding-left: 30px;
+}
+
+.model-small-reverse{
+  font-size: 16px;
+  margin-right: 0;
+}
+
+  }
+
+      /*　施設案内*/
+      @media all and (max-width: 560px) {
+        .floar:last-child{
+          margin-top:30px;
+
+      }
+      .floar-title{
+        font-size: 8vw;
+      }
+      }
+  
+ /*　フッター　*/
+ @media all and (max-width: 560px) {
+  footer{
+    width:560px;
+  }
+
+  #footer-left{
+    float: none;
+    margin:0 auto;
+    padding-left:30px;
+  }
+  #footer-right{
+    float: none;
+    margin:0 auto;
+    padding-left:30px;
+  }
+ }

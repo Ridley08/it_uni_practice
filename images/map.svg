@@ -1,0 +1,14 @@
+<svg id="acsess.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="66" viewBox="0 0 42 66">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 29.656px;
+        fill: #077ec9;
+        text-anchor: end;
+        font-family: 07LogoTypeGothic7;
+      }
+    </style>
+  </defs>
+  <text id="アクセス" class="cls-1" transform="matrix(0.36, 0, 0, 0.364, 43.013, 64.684)">アクセス</text>
+  <image id="地図マーカーのアイコン素材4" x="4" width="34" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAwCAYAAAB0WahSAAAC90lEQVRYhb2YTUhUYRSGnxkUNy1ELJEW5UYSWtSmEAwREdokCrUo27WolVAtcjGYuwiCENyIC1uY0M8mWgVJCzcZgiUiDYIkIWQQRPhDEE4cOVeu4x3nnDt37guDznfPz8Md7vne72bqhudwqAm4AnQDZ4HTwDFN3wS+AUvADPAW2LCWtoJcBB4oRI2x9j+FeQyUbZItc/04MAV8BPodEGhsv+ZOaa1YIB3AF2DA0byUBrRWhxekF3gPNCcAEahZa/ZaQXqA10BdghCB6rR2TzmQFuAlUFsFiEC12qOlFEgGmATqqwgRqF57ZaJArgOdKUAE6tSeB0Dkby5FiEC5gCEA6QLaHAUKwCugDzijnz5dKzjqtGnv/QF1w5H8E7gKzBat54E3wCV9Mk4Y60nvmeCOdBuTdoDLERBhzWrMjrHmXm8BaQROGZOeAAuGuAWNtUh6NwpIqzFBNF6l2FYBaTAGfwfWHcXXNceihqxjR/3jgPDm1AjItjH4pME2hJXVHIu2sw4XJWO53QHS7tguNgRkxTGEHob3hyOU0ViLpPdK8NMsGpNk+x42xA1HbfUltBj8NKhhsWoEeKZGulhNem3EUW+vd2CeL1gMbpH+Ah/UtaOuviuGoRJj/ins4mUannMWqVSfgfMUPY5PU4Y40DMMIpZ/OUWIZe15CGQXGEwRZFB7HgIRyVFxOgWIaT2W7itqZN8DflURQmrfL16MApGRf6uKIFL7hwUEtXweP2HVuNY+pKN207uhYZWElrRmpI4CEc95DdhKAGJLa5X0seX8xVfgdgIgd7RWSVmMznM9HsbVZHhwVQKCDp98DJC8dUhaQeT92M3wJDRoV3M2kwQRzQOjjvhRzTHJA4IemtcMcWveQ70XRGzlkCFuyHE6iAUielHmls9rjEtxQAplbnvO+WpiT3FARO9KeNw5veZWXBDRI+OaSZWAyOvt1dD3VV1LHUQG1ljo+5hz4CUGIpJ9RB5T+VSyH7le8kfpNzChF+T/eAL+A8SklYsls4mhAAAAAElFTkSuQmCC"/>
+</svg>
