@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="どひ水族館の展示エリア紹介。深海ゾーン・サンゴ礁ゾーン・イルカ＆アシカゾーン・淡水ゾーンの4エリアをお楽しみください。">
+    <title>展示エリア紹介 | どひ水族館</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="header-left">
+                <a href="index.html"><img src="images/logo.png" alt="どひ水族館"></a>
+            </div>
+            <button class="menu" id="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+                <img src="images/menu.svg" width="32" height="32" alt="">
+            </button>
+            <nav id="header-right">
+                <ul>
+                    <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
+        </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="exhibits.html" class="active">展示エリア</a></li>
+                <li><a href="events.html">イベント</a></li>
+                <li><a href="tickets.html">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html">生き物図鑑</a></li>
+                <li><a href="shop.html">ショップ・レストラン</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="about.html">会社概要</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>展示エリア紹介</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-hero" style="background-image: url(images/background02.png)">
+        <div class="container">
+            <h1>展示エリア紹介</h1>
+            <p>4つのゾーンで、海と川の生き物たちとの出会いをお楽しみください</p>
+        </div>
+    </div>
+
+    <!-- フロアマップ -->
+    <div class="page-section-alt" id="floormap">
+        <div class="container">
+            <h2 class="section-heading">フロアマップ</h2>
+            <p class="section-lead">どひ水族館は全3フロアで構成されています。<br>お目当てのゾーンやイベント会場を事前にご確認ください。</p>
+
+            <div class="floor-layout">
+                <div class="floor-card">
+                    <div class="floor-badge">3F</div>
+                    <h3 class="floor-name">3階</h3>
+                    <ul class="floor-spots">
+                        <li>イルカ・アシカゾーン</li>
+                        <li>マリンスタジアム（ショー会場）</li>
+                        <li>サブアリーナ（イベント会場）</li>
+                        <li>フォトスポット</li>
+                    </ul>
+                </div>
+                <div class="floor-card">
+                    <div class="floor-badge">2F</div>
+                    <h3 class="floor-name">2階</h3>
+                    <ul class="floor-spots">
+                        <li>サンゴ礁ゾーン</li>
+                        <li>深海ゾーン</li>
+                        <li>大型回遊水槽（エサやり体験会場）</li>
+                        <li>オーシャンテーブル（レストラン）</li>
+                    </ul>
+                </div>
+                <div class="floor-card">
+                    <div class="floor-badge">1F</div>
+                    <h3 class="floor-name">1階</h3>
+                    <ul class="floor-spots">
+                        <li>淡水ゾーン</li>
+                        <li>川のタッチプール</li>
+                        <li>アクアショップ DOHI</li>
+                        <li>インフォメーション・授乳室</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="venue-section">
+                <h3 class="venue-section-title">🎪 イベント開催場所</h3>
+                <div class="venue-grid">
+                    <div class="venue-card">
+                        <p class="venue-name">マリンスタジアム（3F）</p>
+                        <p class="venue-text">イルカショーの主会場。約300席を誇る大型スタジアムで迫力満点のショーをお楽しみください。</p>
+                    </div>
+                    <div class="venue-card">
+                        <p class="venue-name">サブアリーナ（3F）</p>
+                        <p class="venue-text">アシカショーや臨時イベントの会場。マリンスタジアムとあわせてお立ち寄りください。</p>
+                    </div>
+                    <div class="venue-card">
+                        <p class="venue-name">大型回遊水槽前（2F）</p>
+                        <p class="venue-text">ジンベイザメのエサやり体験イベントの開催場所。間近で迫力ある姿をご覧いただけます。</p>
+                    </div>
+                </div>
+                <div class="venue-btn-wrapper">
+                    <a href="events.html#schedule" class="btn venue-btn">ショースケジュールを確認する<i class="fas fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ゾーン一覧 -->
+    <div class="page-section" id="zones">
+        <div class="container">
+            <h2 class="section-heading">ゾーン一覧</h2>
+            <p class="section-lead">どひ水族館は、テーマの異なる4つのゾーンで構成されています。<br>それぞれ異なる海の世界をお楽しみください。</p>
+
+            <!-- Zone 1: 深海 -->
+            <div class="zone">
+                <div class="zone-img">
+                    <div class="zone-img-placeholder" style="background: linear-gradient(135deg, #0d1b4b 0%, #1a2f6e 100%);">🦑</div>
+                </div>
+                <div class="zone-body">
+                    <p class="zone-number">ZONE 01</p>
+                    <h3 class="zone-title">深海ゾーン</h3>
+                    <div style="margin-bottom: 16px;">
+                        <span class="tag tag-blue">深海魚</span>
+                        <span class="tag tag-cyan">チョウチンアンコウ</span>
+                        <span class="tag tag-blue">ダイオウイカ</span>
+                    </div>
+                    <p class="zone-text">
+                        水深200m以深に広がる、謎に満ちた深海の世界を再現したゾーンです。
+                        ほとんど光が届かない暗闇の中で生き抜く、独特の進化を遂げた生き物たちを間近で観察できます。
+                        チョウチンアンコウの幻想的な発光やダイオウグソクムシの迫力ある姿は必見です。
+                        光の演出にもこだわった、まるで本物の深海に潜るような没入体験をお届けします。
+                    </p>
+                    <a href="creatures.html" class="zone-link">このゾーンの生き物を見る &gt;&gt;</a>
+                </div>
+            </div>
+
+            <!-- Zone 2: サンゴ礁 -->
+            <div class="zone">
+                <div class="zone-img">
+                    <div class="zone-img-placeholder" style="background: linear-gradient(135deg, #0097a7 0%, #26c6da 100%);">🐠</div>
+                </div>
+                <div class="zone-body">
+                    <p class="zone-number">ZONE 02</p>
+                    <h3 class="zone-title">サンゴ礁ゾーン</h3>
+                    <div style="margin-bottom: 16px;">
+                        <span class="tag tag-orange">熱帯魚</span>
+                        <span class="tag tag-cyan">カクレクマノミ</span>
+                        <span class="tag tag-green">サンゴ</span>
+                    </div>
+                    <p class="zone-text">
+                        色とりどりの熱帯魚とサンゴが織りなす、南国の海を再現したゾーンです。
+                        カクレクマノミやハタタテハゼなど、鮮やかな色彩を持つ魚たちが泳ぎ回る様子は、
+                        見ているだけで気持ちが明るくなります。
+                        大型の回遊水槽ではサメやエイとの共存する姿も観察できます。
+                    </p>
+                    <a href="creatures.html" class="zone-link">このゾーンの生き物を見る &gt;&gt;</a>
+                </div>
+            </div>
+
+            <!-- Zone 3: イルカ・アシカ -->
+            <div class="zone">
+                <div class="zone-img">
+                    <div class="zone-img-placeholder" style="background: linear-gradient(135deg, #1565c0 0%, #42a5f5 100%);">🐬</div>
+                </div>
+                <div class="zone-body">
+                    <p class="zone-number">ZONE 03</p>
+                    <h3 class="zone-title">イルカ・アシカゾーン</h3>
+                    <div style="margin-bottom: 16px;">
+                        <span class="tag tag-blue">ショー開催</span>
+                        <span class="tag tag-cyan">バンドウイルカ</span>
+                        <span class="tag tag-pink">カリフォルニアアシカ</span>
+                    </div>
+                    <p class="zone-text">
+                        どひ水族館最大の見どころ、イルカとアシカのゾーンです。
+                        約300席を誇る大型スタジアムでは、毎日3回イルカショーを開催しています。
+                        華麗なジャンプやダイナミックな演技で観客を魅了します。
+                        ショーのない時間帯は水中トンネルからイルカの泳ぐ姿を間近に観察できます。
+                    </p>
+                    <a href="events.html" class="zone-link">ショースケジュールを見る &gt;&gt;</a>
+                </div>
+            </div>
+
+            <!-- Zone 4: 淡水 -->
+            <div class="zone">
+                <div class="zone-img">
+                    <div class="zone-img-placeholder" style="background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 100%);">🐟</div>
+                </div>
+                <div class="zone-body">
+                    <p class="zone-number">ZONE 04</p>
+                    <h3 class="zone-title">淡水ゾーン</h3>
+                    <div style="margin-bottom: 16px;">
+                        <span class="tag tag-green">淡水魚</span>
+                        <span class="tag tag-green">アマゾン</span>
+                        <span class="tag tag-blue">日本の川</span>
+                    </div>
+                    <p class="zone-text">
+                        川・湖・湿地など淡水域に暮らす生き物たちを紹介するゾーンです。
+                        日本の清流に生きるアユやヤマメから、アマゾン川のピラニアやアロワナまで、
+                        世界各地の淡水の生態系を一度に体験できます。
+                        子どもたちに人気の「川のタッチプール」では、ドジョウやメダカに直接触れることができます。
+                    </p>
+                    <a href="creatures.html" class="zone-link">このゾーンの生き物を見る &gt;&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モデルコース：家族 -->
+    <div class="page-section-alt" id="course-family">
+        <div class="container">
+            <p class="course-label">MODEL COURSE 01</p>
+            <h2 class="section-heading">家族でたのしむコース</h2>
+            <p class="section-lead">ベビーカーや小さなお子様と一緒でも安心。<br>子どもが夢中になれるスポットを厳選した、ファミリー向けの定番コースです。</p>
+            <div class="course-grid">
+                <div class="course-steps">
+                    <div class="course-step">
+                        <span class="step-num">1</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🐠 サンゴ礁ゾーン</h3>
+                            <p class="step-text">カラフルな熱帯魚がお出迎え！カクレクマノミやハタタテハゼなど、鮮やかな色彩の魚たちで小さなお子様も大興奮のスタートです。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">2</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🐟 淡水ゾーン（タッチプール体験）</h3>
+                            <p class="step-text">ドジョウやメダカに直接触れられる「川のタッチプール」はファミリーに大人気。生き物の温かみを体で感じる貴重な体験です。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">3</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🐬 イルカショー観覧</h3>
+                            <p class="step-text">大型スタジアムでイルカの華麗なジャンプを間近に体験。子どもから大人まで思わず歓声が上がる迫力のショーは絶対に外せません。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">4</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🛍️ ショップでお土産選び</h3>
+                            <p class="step-text">お子様に大人気のぬいぐるみや海の生き物グッズが充実。思い出に残るお土産を家族みんなで選んで帰りましょう。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-info-box">
+                    <div class="course-info-icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="course-info-title">ファミリーへのポイント</h3>
+                    <ul class="course-info-list">
+                        <li>館内全エリアベビーカーで移動OK</li>
+                        <li>授乳室・おむつ替え台を各フロアに完備</li>
+                        <li>子ども向けクイズラリー開催中</li>
+                        <li>所要時間の目安：約3〜4時間</li>
+                    </ul>
+                    <a href="tickets.html#admission" class="btn course-info-btn">チケットを購入する</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モデルコース：カップル -->
+    <div class="page-section" id="course-couple">
+        <div class="container">
+            <p class="course-label">MODEL COURSE 02</p>
+            <h2 class="section-heading">カップルでたのしむコース</h2>
+            <p class="section-lead">幻想的な光と深海の神秘が、二人だけの時間を彩る。<br>ロマンチックな雰囲気を堪能できる、大人向けのとっておきコースです。</p>
+            <div class="course-grid">
+                <div class="course-steps">
+                    <div class="course-step">
+                        <span class="step-num">1</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🦑 深海ゾーン</h3>
+                            <p class="step-text">チョウチンアンコウの幻想的な発光が演出する神秘的な空間。薄暗い館内が、二人だけの特別な雰囲気を作り出します。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">2</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🐠 サンゴ礁ゾーン（フォトスポット）</h3>
+                            <p class="step-text">大型水槽の前は絶好の撮影スポット。カラフルな魚たちを背景に、二人の大切な思い出の1枚を残しましょう。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">3</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🍽️ オーシャンテーブルでランチ</h3>
+                            <p class="step-text">大型水槽を眺めながら食事ができるレストランへ。シーフードを中心とした本格料理で、特別なひとときをお過ごしください。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">4</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🌙 ナイトアクアリウム（土曜夜限定）</h3>
+                            <p class="step-text">毎月第2・4土曜日開催の夜間特別開館。幻想的にライトアップされた水槽の前で、二人だけのロマンチックな夜を。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-info-box course-info-box--couple">
+                    <div class="course-info-icon">💑</div>
+                    <h3 class="course-info-title">カップルへのポイント</h3>
+                    <ul class="course-info-list">
+                        <li>館内各所に写真映えスポット多数</li>
+                        <li>ナイトアクアリウムは毎月第2・4土曜</li>
+                        <li>レストランは事前予約がおすすめ</li>
+                        <li>所要時間の目安：約2〜3時間</li>
+                    </ul>
+                    <a href="events.html#schedule" class="btn course-info-btn">イベントを確認する</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モデルコース：友だち -->
+    <div class="page-section-alt" id="course-friends">
+        <div class="container">
+            <p class="course-label">MODEL COURSE 03</p>
+            <h2 class="section-heading">友だちとたのしむコース</h2>
+            <p class="section-lead">みんなで盛り上がれるダイナミックなスポットが満載。<br>体験型コンテンツや写真撮影スポットが充実した、グループ向けのはじけるコースです。</p>
+            <div class="course-grid">
+                <div class="course-steps">
+                    <div class="course-step">
+                        <span class="step-num">1</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🐬 イルカ・アシカゾーン（ショー観覧）</h3>
+                            <p class="step-text">最大300席のスタジアムで毎日3回開催のイルカショー！華麗なジャンプとアクロバティックな演技でみんな大興奮間違いなし。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">2</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🦑 深海ゾーン（フォトチャレンジ）</h3>
+                            <p class="step-text">ダイオウイカやチョウチンアンコウと一緒に記念撮影！SNS映えする不思議な深海ゾーンをみんなで攻略しよう。</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">3</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🐟 淡水ゾーン（タッチプール）</h3>
+                            <p class="step-text">みんなでワイワイ盛り上がるタッチプール体験。誰が一番仲良くなれるかチャレンジしてみよう！</p>
+                        </div>
+                    </div>
+                    <div class="course-step">
+                        <span class="step-num">4</span>
+                        <div class="step-body">
+                            <h3 class="step-title">🛍️ お揃いグッズをゲット</h3>
+                            <p class="step-text">ショップでみんなでお揃いのグッズを購入。水族館限定のオリジナルグッズでこの日の思い出を形に残そう。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-info-box course-info-box--friends">
+                    <div class="course-info-icon">👥</div>
+                    <h3 class="course-info-title">グループへのポイント</h3>
+                    <ul class="course-info-list">
+                        <li>15名以上で団体割引が適用</li>
+                        <li>館内各所に写真撮影スポットあり</li>
+                        <li>事前オンライン購入で10%OFF</li>
+                        <li>所要時間の目安：約3〜4時間</li>
+                    </ul>
+                    <a href="tickets.html#group" class="btn course-info-btn">団体料金を確認する</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- バナー -->
+    <div id="banner-wrapper">
+        <div class="container">
+            <div id="banners">
+                <div class="banner"><a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a></div>
+                <div class="banner"><a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a></div>
+                <div class="banner"><a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footers">
+                <div id="footer-left">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="どひ水族館"></a>
+                    <dl>
+                        <dt>住所</dt><dd>東京都豊島区南池袋１丁目</dd>
+                        <dt>電話番号</dt><dd>000-1234-5678</dd>
+                    </dl>
+                </div>
+                <div id="footer-right">
+                    <dl>
+                        <dt>営業時間</dt><dd>9:00〜18:00（第2・4土曜日は 21:00 まで）</dd>
+                        <dt>休業日</dt><dd>1/1、毎週水曜日</dd>
+                    </dl>
+                </div>
+                <div id="footer-bottom">
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="#">安全への取組</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Copyright"><div class="container"><p>© Dohi Aquarium. All Rights Reserved.</p></div></div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', function () {
+            const isOpen = mobileNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>

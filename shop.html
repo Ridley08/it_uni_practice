@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="どひ水族館のショップ・レストラン情報。オリジナルグッズや海鮮メニューなど、来館の記念にぜひお立ち寄りください。">
+    <title>ショップ・レストラン | どひ水族館</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <style>
+        .shop-section-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--color-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .shop-section-title .icon {
+            font-size: 36px;
+        }
+        .shop-info-box {
+            background: #f0f4ff;
+            border-left: 4px solid var(--color-accent);
+            padding: 20px 24px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin-top: 20px;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.9;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 32px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 14px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        .menu-item-name {
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+        .menu-item-sub {
+            font-size: 12px;
+            color: #888;
+            margin-top: 2px;
+        }
+        .menu-item-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--color-accent);
+            white-space: nowrap;
+            margin-left: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="header-left">
+                <a href="index.html"><img src="images/logo.png" alt="どひ水族館"></a>
+            </div>
+            <button class="menu" id="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+                <img src="images/menu.svg" width="32" height="32" alt="">
+            </button>
+            <nav id="header-right">
+                <ul>
+                    <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
+        </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="exhibits.html">展示エリア</a></li>
+                <li><a href="events.html">イベント</a></li>
+                <li><a href="tickets.html">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html">生き物図鑑</a></li>
+                <li><a href="shop.html" class="active">ショップ・レストラン</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="about.html">会社概要</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>ショップ・レストラン</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-hero" style="background-image: url(images/background03.png)">
+        <div class="container">
+            <h1>ショップ・レストラン</h1>
+            <p>来館の思い出に、おみやげ選びやお食事をお楽しみください</p>
+        </div>
+    </div>
+
+    <!-- ショップ -->
+    <div class="page-section" id="shop">
+        <div class="container">
+            <h2 class="section-heading">アクアショップ DOHI</h2>
+            <p class="section-lead">館内出口付近に位置するオフィシャルショップ。<br>オリジナルグッズから季節限定商品まで幅広くそろっています。</p>
+
+            <div class="card-grid-3">
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1f296c, #3a4db8);">🧸</div>
+                    <div class="card-body">
+                        <p class="card-label">人気No.1</p>
+                        <h3 class="card-title">オリジナルぬいぐるみ</h3>
+                        <p class="card-text">当館のマスコットキャラクターをはじめ、館内の生き物をモデルにしたぬいぐるみが勢揃い。S・M・Lサイズ展開。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #077ec9, #4fc3f7);">📦</div>
+                    <div class="card-body">
+                        <p class="card-label">お土産に最適</p>
+                        <h3 class="card-title">オリジナルお菓子セット</h3>
+                        <p class="card-text">海の生き物をモチーフにしたクッキーやチョコレートのセット。個包装なので職場や学校へのお土産にぴったりです。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #e65100, #ff9800);">👕</div>
+                    <div class="card-body">
+                        <p class="card-label">アパレル</p>
+                        <h3 class="card-title">オリジナルTシャツ・パーカー</h3>
+                        <p class="card-text">水族館ロゴや生き物イラストをデザインしたウェア。大人から子どもまでサイズ展開が豊富で、普段使いにも最適です。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #4a148c, #9c27b0);">🖼️</div>
+                    <div class="card-body">
+                        <p class="card-label">インテリア</p>
+                        <h3 class="card-title">ポスター・フォトブック</h3>
+                        <p class="card-text">館内の生き物を撮影した高品質なポスターや写真集。プロカメラマンによる作品で、部屋に飾るとおしゃれなインテリアに。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #006064, #00acc1);">🎒</div>
+                    <div class="card-body">
+                        <p class="card-label">文具・雑貨</p>
+                        <h3 class="card-title">ステーショナリーセット</h3>
+                        <p class="card-text">海の生き物をモチーフにしたノート・ペン・付箋などの文具セット。学校や職場で使えるおしゃれなデザインです。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #2e7d32, #66bb6a);">🌊</div>
+                    <div class="card-body">
+                        <p class="card-label">季節限定</p>
+                        <h3 class="card-title">季節限定グッズ</h3>
+                        <p class="card-text">夏・冬・クリスマスなど季節ごとに限定デザインのグッズを販売。来るたびに新しい商品と出会えるのが魅力です。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-info-box">
+                <strong>ショップ営業時間：</strong>9:00〜18:30（ナイトアクアリウム開催日は 21:30 まで）<br>
+                <strong>場所：</strong>1F 出口付近<br>
+                <strong>年間パスポートご提示で：</strong>10%割引
+            </div>
+        </div>
+    </div>
+
+    <!-- レストラン -->
+    <div class="page-section-alt" id="restaurant">
+        <div class="container">
+            <h2 class="section-heading">レストラン&カフェ</h2>
+            <p class="section-lead">海をテーマにした2つの飲食施設をご用意しています。</p>
+
+            <div class="card-grid-2" style="margin-bottom: 60px;">
+                <!-- レストラン -->
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #0d47a1, #1976d2); height: 220px;">🍽️</div>
+                    <div class="card-body">
+                        <p class="card-label">レストラン</p>
+                        <h3 class="card-title">オーシャンテーブル</h3>
+                        <p class="card-text" style="margin-bottom: 16px;">海の幸をふんだんに使った本格料理をご提供。大型水槽を眺めながら食事ができる窓側席は特に人気です。<br>営業時間：11:00〜15:00（L.O. 14:30）</p>
+                        <div class="menu-grid">
+                            <div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">海の幸プレート</p>
+                                        <p class="menu-item-sub">サラダ・スープ付き</p>
+                                    </div>
+                                    <span class="menu-item-price">1,600円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">シーフードパスタ</p>
+                                        <p class="menu-item-sub">ドリンク付き</p>
+                                    </div>
+                                    <span class="menu-item-price">1,400円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">お子様ランチ</p>
+                                        <p class="menu-item-sub">ジュース付き</p>
+                                    </div>
+                                    <span class="menu-item-price">900円</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">海老フライ定食</p>
+                                        <p class="menu-item-sub">ご飯・味噌汁付き</p>
+                                    </div>
+                                    <span class="menu-item-price">1,500円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">本日のスープセット</p>
+                                        <p class="menu-item-sub">パン付き</p>
+                                    </div>
+                                    <span class="menu-item-price">800円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">海鮮カレー</p>
+                                        <p class="menu-item-sub">サラダ付き</p>
+                                    </div>
+                                    <span class="menu-item-price">1,300円</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- カフェ -->
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #006064, #26c6da); height: 220px;">☕</div>
+                    <div class="card-body">
+                        <p class="card-label">カフェ</p>
+                        <h3 class="card-title">アクアカフェ</h3>
+                        <p class="card-text" style="margin-bottom: 16px;">ドリンクや軽食をテイクアウトできるカフェ。イルカ・タコなど生き物をモチーフにしたスイーツが大人気です。<br>営業時間：9:00〜17:30</p>
+                        <div class="menu-grid">
+                            <div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">イルカラテ</p>
+                                        <p class="menu-item-sub">ラテアート付き</p>
+                                    </div>
+                                    <span class="menu-item-price">650円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">クラゲゼリー</p>
+                                        <p class="menu-item-sub">ドリンクセット有り</p>
+                                    </div>
+                                    <span class="menu-item-price">480円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">海のソフトクリーム</p>
+                                        <p class="menu-item-sub">塩バニラ・抹茶</p>
+                                    </div>
+                                    <span class="menu-item-price">400円</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">タコ焼き風スナック</p>
+                                        <p class="menu-item-sub">6個入り</p>
+                                    </div>
+                                    <span class="menu-item-price">550円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">フルーツジュース</p>
+                                        <p class="menu-item-sub">Mサイズ</p>
+                                    </div>
+                                    <span class="menu-item-price">350円</span>
+                                </div>
+                                <div class="menu-item">
+                                    <div>
+                                        <p class="menu-item-name">ホットドッグセット</p>
+                                        <p class="menu-item-sub">ドリンク付き</p>
+                                    </div>
+                                    <span class="menu-item-price">750円</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner-wrapper">
+        <div class="container">
+            <div id="banners">
+                <div class="banner"><a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a></div>
+                <div class="banner"><a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a></div>
+                <div class="banner"><a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footers">
+                <div id="footer-left">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="どひ水族館"></a>
+                    <dl>
+                        <dt>住所</dt><dd>東京都豊島区南池袋１丁目</dd>
+                        <dt>電話番号</dt><dd>000-1234-5678</dd>
+                    </dl>
+                </div>
+                <div id="footer-right">
+                    <dl>
+                        <dt>営業時間</dt><dd>9:00〜18:00（第2・4土曜日は 21:00 まで）</dd>
+                        <dt>休業日</dt><dd>1/1、毎週水曜日</dd>
+                    </dl>
+                </div>
+                <div id="footer-bottom">
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="#">安全への取組</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Copyright"><div class="container"><p>© Dohi Aquarium. All Rights Reserved.</p></div></div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', function () {
+            const isOpen = mobileNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>

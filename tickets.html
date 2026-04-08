@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="どひ水族館のチケット・料金案内。当日券・年間パスポート・団体料金・オンライン割引など詳しくご案内します。">
+    <title>チケット・料金 | どひ水族館</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <style>
+        .passport-benefit {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .passport-benefit-icon {
+            font-size: 24px;
+            flex: 0 0 32px;
+        }
+        .passport-benefit-text {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.7;
+        }
+        .online-box {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            border-radius: var(--border-radius);
+            padding: 48px 40px;
+            text-align: center;
+            color: #fff;
+        }
+        .online-box h3 {
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+        .online-box p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 28px;
+            line-height: 1.8;
+        }
+        .online-discount-badge {
+            display: inline-block;
+            background: var(--color-gold);
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 10px 28px;
+            border-radius: 40px;
+            margin-bottom: 28px;
+        }
+        .btn-white {
+            display: inline-block;
+            background: #fff;
+            color: var(--color-primary);
+            font-size: 18px;
+            font-weight: bold;
+            padding: 16px 48px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s;
+        }
+        .btn-white:hover {
+            background: #f0f4ff;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="header-left">
+                <a href="index.html"><img src="images/logo.png" alt="どひ水族館"></a>
+            </div>
+            <button class="menu" id="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+                <img src="images/menu.svg" width="32" height="32" alt="">
+            </button>
+            <nav id="header-right">
+                <ul>
+                    <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
+        </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="exhibits.html">展示エリア</a></li>
+                <li><a href="events.html">イベント</a></li>
+                <li><a href="tickets.html" class="active">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html">生き物図鑑</a></li>
+                <li><a href="shop.html">ショップ・レストラン</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="about.html">会社概要</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>チケット・料金</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-hero" style="background-image: url(images/background01.jpg)">
+        <div class="container">
+            <h1>チケット・料金</h1>
+            <p>当日券・年間パスポート・オンライン購入のご案内</p>
+        </div>
+    </div>
+
+    <!-- 入館料 -->
+    <div class="page-section" id="admission">
+        <div class="container">
+            <h2 class="section-heading">入館料</h2>
+            <p class="section-lead">全ての入館料にショー（イルカ・アシカ）の観覧料が含まれています。<br>お得な年間パスポートもご用意しています。</p>
+
+            <div class="card-grid-2">
+                <div class="ticket-box">
+                    <p class="ticket-box-title"><i class="fas fa-ticket-alt" style="margin-right: 8px;"></i>当日券</p>
+                    <div class="ticket-price-row">
+                        <span>大人（高校生以上）</span>
+                        <span class="ticket-price">1,600円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>中学生・小学生</span>
+                        <span class="ticket-price">1,000円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>幼児（4歳以上）</span>
+                        <span class="ticket-price">600円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>シルバー（65歳以上）</span>
+                        <span class="ticket-price">1,000円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>3歳以下</span>
+                        <span class="ticket-price" style="color: #0a7d55;">無料</span>
+                    </div>
+                </div>
+                <div class="ticket-box" id="annual-pass" style="border-top-color: var(--color-gold);">
+                    <p class="ticket-box-title" style="color: #c67c00;"><i class="fas fa-star" style="margin-right: 8px;"></i>年間パスポート</p>
+                    <div class="ticket-price-row">
+                        <span>大人（高校生以上）</span>
+                        <span class="ticket-price" style="color: #c67c00;">3,200円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>中学生・小学生</span>
+                        <span class="ticket-price" style="color: #c67c00;">2,000円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>幼児（4歳以上）</span>
+                        <span class="ticket-price" style="color: #c67c00;">1,200円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>シルバー（65歳以上）</span>
+                        <span class="ticket-price" style="color: #c67c00;">2,000円</span>
+                    </div>
+                    <div class="ticket-price-row">
+                        <span>3歳以下</span>
+                        <span class="ticket-price" style="color: #0a7d55;">無料</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket-note">
+                <ul>
+                    <li>年間パスポートは購入日から1年間有効です。</li>
+                    <li>障がい者手帳をお持ちの方および付き添いの方1名は入館料が半額となります。</li>
+                    <li>各種クレジットカード・交通系ICカードがご利用いただけます。</li>
+                    <li>当日券はオンラインでの購入で10%割引になります（下記参照）。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- オンライン購入 -->
+    <div class="page-section-alt">
+        <div class="container">
+            <div class="online-box">
+                <h3>オンラインチケットで10%OFF</h3>
+                <p>公式サイトからチケットを事前購入すると、<br>全券種が通常価格より10%割引になります。</p>
+                <div class="online-discount-badge">10% OFF</div><br>
+                <a href="#" class="btn-white">オンラインでチケットを購入する <i class="fas fa-play"></i></a>
+                <p style="font-size: 13px; opacity: 0.75; margin-top: 16px; margin-bottom: 0;">※購入後のキャンセル・変更はお受けできません。有効期限は購入日から90日間です。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 団体料金 -->
+    <div class="page-section" id="group">
+        <div class="container">
+            <h2 class="section-heading">団体料金</h2>
+            <p class="section-lead">15名様以上のグループには団体割引が適用されます。<br>学校行事や企業イベントなどにもご利用ください。</p>
+            <div class="table-wrapper">
+                <table class="table01">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>15名〜49名</th>
+                            <th>50名以上</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>大人（高校生以上）</th>
+                            <td data-label="15名〜49名"><p>1,400円</p></td>
+                            <td data-label="50名以上"><p>1,200円</p></td>
+                        </tr>
+                        <tr>
+                            <th>中学生・小学生</th>
+                            <td data-label="15名〜49名"><p>800円</p></td>
+                            <td data-label="50名以上"><p>700円</p></td>
+                        </tr>
+                        <tr>
+                            <th>幼児（4歳以上）</th>
+                            <td data-label="15名〜49名"><p>500円</p></td>
+                            <td data-label="50名以上"><p>400円</p></td>
+                        </tr>
+                        <tr>
+                            <th>シルバー（65歳以上）</th>
+                            <td data-label="15名〜49名"><p>800円</p></td>
+                            <td data-label="50名以上"><p>700円</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="admission-btn-wrapper">
+                <a href="#" class="overwhite"><span class="btn">団体予約のお問い合わせ <i class="fas fa-play"></i></span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 年間パスポート特典 -->
+    <div class="page-section-alt">
+        <div class="container">
+            <h2 class="section-heading">年間パスポートの特典</h2>
+            <p class="section-lead">年間パスポートは1年間何度でもご来館いただけるだけでなく、<br>さまざまな特典もご用意しています。</p>
+            <div class="card-grid-3">
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1f296c, #077ec9);">🔁</div>
+                    <div class="card-body">
+                        <p class="card-label">特典 01</p>
+                        <h3 class="card-title">年間何度でも入館</h3>
+                        <p class="card-text">購入日から1年間、何度でもご来館いただけます。2回ご来館いただくだけで元が取れるお得さです。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #077ec9, #26c6da);">🛍️</div>
+                    <div class="card-body">
+                        <p class="card-label">特典 02</p>
+                        <h3 class="card-title">ショップ10%割引</h3>
+                        <p class="card-text">館内ショップでのお買い物が10%割引になります。お土産購入にもお得にご利用いただけます。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #f29a00, #ffcc02);">🎫</div>
+                    <div class="card-body">
+                        <p class="card-label">特典 03</p>
+                        <h3 class="card-title">イベント優先予約</h3>
+                        <p class="card-text">バックヤードツアーや特別イベントを一般受付より1週間早く予約できる優先予約権が付与されます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner-wrapper">
+        <div class="container">
+            <div id="banners">
+                <div class="banner"><a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a></div>
+                <div class="banner"><a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a></div>
+                <div class="banner"><a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footers">
+                <div id="footer-left">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="どひ水族館"></a>
+                    <dl>
+                        <dt>住所</dt><dd>東京都豊島区南池袋１丁目</dd>
+                        <dt>電話番号</dt><dd>000-1234-5678</dd>
+                    </dl>
+                </div>
+                <div id="footer-right">
+                    <dl>
+                        <dt>営業時間</dt><dd>9:00〜18:00（第2・4土曜日は 21:00 まで）</dd>
+                        <dt>休業日</dt><dd>1/1、毎週水曜日</dd>
+                    </dl>
+                </div>
+                <div id="footer-bottom">
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="#">安全への取組</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Copyright"><div class="container"><p>© Dohi Aquarium. All Rights Reserved.</p></div></div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', function () {
+            const isOpen = mobileNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>

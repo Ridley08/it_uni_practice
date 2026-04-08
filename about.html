@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="どひ水族館の会社概要。運営会社の基本情報・経営理念・沿革をご紹介します。">
+    <title>会社概要 | どひ水族館</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <style>
+        .philosophy-box {
+            text-align: center;
+            padding: 60px 40px;
+        }
+        .philosophy-quote {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--color-primary);
+            line-height: 1.6;
+            margin-bottom: 24px;
+            position: relative;
+            display: inline-block;
+        }
+        .philosophy-quote::before,
+        .philosophy-quote::after {
+            content: '"';
+            font-size: 60px;
+            color: var(--color-accent);
+            opacity: 0.3;
+            position: absolute;
+            line-height: 1;
+        }
+        .philosophy-quote::before {
+            top: -10px;
+            left: -36px;
+        }
+        .philosophy-quote::after {
+            bottom: -30px;
+            right: -36px;
+        }
+        .philosophy-sub {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .history-item {
+            display: flex;
+            gap: 32px;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e4ee;
+            align-items: flex-start;
+        }
+        .history-year {
+            flex: 0 0 100px;
+            font-size: 15px;
+            font-weight: bold;
+            color: var(--color-accent);
+            padding-top: 2px;
+        }
+        .history-text {
+            flex: 1;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.8;
+        }
+        .message-box {
+            background: #fff;
+            border-radius: var(--border-radius);
+            padding: 48px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            display: flex;
+            gap: 48px;
+            align-items: flex-start;
+        }
+        .message-avatar {
+            flex: 0 0 120px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            flex-shrink: 0;
+        }
+        .message-body h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+        }
+        .message-body .position {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .message-body p {
+            font-size: 15px;
+            color: #444;
+            line-height: 2.0;
+        }
+        @media (max-width: 640px) {
+            .message-box {
+                flex-direction: column;
+                padding: 28px;
+                gap: 24px;
+            }
+            .philosophy-quote {
+                font-size: 20px;
+            }
+            .philosophy-quote::before,
+            .philosophy-quote::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="header-left">
+                <a href="index.html"><img src="images/logo.png" alt="どひ水族館"></a>
+            </div>
+            <button class="menu" id="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+                <img src="images/menu.svg" width="32" height="32" alt="">
+            </button>
+            <nav id="header-right">
+                <ul>
+                    <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
+        </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="exhibits.html">展示エリア</a></li>
+                <li><a href="events.html">イベント</a></li>
+                <li><a href="tickets.html">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html">生き物図鑑</a></li>
+                <li><a href="shop.html">ショップ・レストラン</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="about.html" class="active">会社概要</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>会社概要</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-hero" style="background-image: url(images/background03.png)">
+        <div class="container">
+            <h1>会社概要</h1>
+            <p>どひ水族館を運営する株式会社どひ水族館について</p>
+        </div>
+    </div>
+
+    <!-- 理念 -->
+    <div class="page-section-alt">
+        <div class="container">
+            <h2 class="section-heading">経営理念</h2>
+            <div class="philosophy-box">
+                <p class="philosophy-quote">海の生き物との出会いを通じて、<br>人々に感動と学びを届ける</p>
+                <p class="philosophy-sub">
+                    私たちどひ水族館は、生き物たちとの豊かな出会いが人々の心を動かし、
+                    自然環境への関心と敬意を育むと信じています。
+                    次世代へ海の素晴らしさを伝えるため、展示・教育・保全活動に取り組み続けます。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 会社概要テーブル -->
+    <div class="page-section">
+        <div class="container">
+            <h2 class="section-heading">基本情報</h2>
+            <p class="section-lead"></p>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <table class="about-table">
+                    <tbody>
+                        <tr>
+                            <th>施設名</th>
+                            <td>どひ水族館</td>
+                        </tr>
+                        <tr>
+                            <th>運営会社</th>
+                            <td>株式会社どひ水族館</td>
+                        </tr>
+                        <tr>
+                            <th>設立</th>
+                            <td>2019年6月1日</td>
+                        </tr>
+                        <tr>
+                            <th>開館</th>
+                            <td>2020年1月11日</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>〒171-0022 東京都豊島区南池袋１丁目</td>
+                        </tr>
+                        <tr>
+                            <th>電話番号</th>
+                            <td>000-1234-5678</td>
+                        </tr>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>9:00〜18:00（第2・4土曜日は 21:00 まで）<br>最終入館は閉館30分前まで</td>
+                        </tr>
+                        <tr>
+                            <th>休館日</th>
+                            <td>毎週水曜日・1月1日</td>
+                        </tr>
+                        <tr>
+                            <th>展示規模</th>
+                            <td>約200種・5,000点以上</td>
+                        </tr>
+                        <tr>
+                            <th>施設面積</th>
+                            <td>延床面積 約8,500㎡</td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>水族館の運営・管理、海洋生物の保全研究、環境教育プログラムの提供</td>
+                        </tr>
+                        <tr>
+                            <th>アクセス</th>
+                            <td>池袋駅（各線）東口より徒歩10分<br><a href="access.html" style="color: var(--color-accent); text-decoration: underline;">詳しいアクセスはこちら</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 館長メッセージ -->
+    <div class="page-section-alt">
+        <div class="container">
+            <h2 class="section-heading">館長メッセージ</h2>
+            <p class="section-lead"></p>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="message-box">
+                    <div class="message-avatar">🐋</div>
+                    <div class="message-body">
+                        <h3>どひ 太郎</h3>
+                        <p class="position">株式会社どひ水族館 代表取締役・館長</p>
+                        <p>
+                            どひ水族館のウェブサイトをご覧いただきありがとうございます。<br><br>
+                            私たちの水族館は「海の生き物との出会いを通じて、人々に感動と学びを届ける」という理念のもと、
+                            2020年のオープン以来、多くのお客様にご来館いただいてまいりました。<br><br>
+                            深海の神秘、サンゴ礁の鮮やかな色彩、イルカの知性と躍動感──
+                            館内にはそれぞれ異なる「海の物語」があります。
+                            ぜひご家族やご友人とともに、生き物たちの世界に触れていただければ幸いです。<br><br>
+                            また、私たちは展示だけでなく、絶滅危惧種の保全研究や海洋環境教育にも力を入れています。
+                            次世代に豊かな海を引き継ぐために、皆様と一緒に考え、歩んでいけたらと思っています。<br><br>
+                            皆様のご来館を、心よりお待ちしております。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 沿革 -->
+    <div class="page-section">
+        <div class="container">
+            <h2 class="section-heading">沿革</h2>
+            <p class="section-lead"></p>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div class="history-item">
+                    <span class="history-year">2019年 6月</span>
+                    <p class="history-text">株式会社どひ水族館 設立</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2019年 10月</span>
+                    <p class="history-text">東京都豊島区南池袋に建設着工</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2020年 1月</span>
+                    <p class="history-text">どひ水族館 グランドオープン（約200種・5,000点で開館）</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2020年 7月</span>
+                    <p class="history-text">夏の水族館まつり 初開催。来館者数1万人を突破</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2021年 4月</span>
+                    <p class="history-text">年間パスポート制度を導入。会員数1,000名を突破</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2022年 3月</span>
+                    <p class="history-text">ナイトアクアリウム 定例化（毎月第2・4土曜日）</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2023年 6月</span>
+                    <p class="history-text">累計来館者数10万人を達成</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2024年 9月</span>
+                    <p class="history-text">大型回遊水槽を増設。ジンベイザメの展示準備開始</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2026年 2月</span>
+                    <p class="history-text">ジンベイザメの展示開始</p>
+                </div>
+                <div class="history-item">
+                    <span class="history-year">2026年 3月</span>
+                    <p class="history-text">深海ゾーンをリニューアルオープン</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner-wrapper">
+        <div class="container">
+            <div id="banners">
+                <div class="banner"><a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a></div>
+                <div class="banner"><a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a></div>
+                <div class="banner"><a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footers">
+                <div id="footer-left">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="どひ水族館"></a>
+                    <dl>
+                        <dt>住所</dt><dd>東京都豊島区南池袋１丁目</dd>
+                        <dt>電話番号</dt><dd>000-1234-5678</dd>
+                    </dl>
+                </div>
+                <div id="footer-right">
+                    <dl>
+                        <dt>営業時間</dt><dd>9:00〜18:00（第2・4土曜日は 21:00 まで）</dd>
+                        <dt>休業日</dt><dd>1/1、毎週水曜日</dd>
+                    </dl>
+                </div>
+                <div id="footer-bottom">
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="#">安全への取組</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Copyright"><div class="container"><p>© Dohi Aquarium. All Rights Reserved.</p></div></div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', function () {
+            const isOpen = mobileNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>

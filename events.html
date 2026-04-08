@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="どひ水族館のイベント・ショー情報。イルカショー・アシカショーの毎日のスケジュールや季節イベントをご確認ください。">
+    <title>イベント・ショー情報 | どひ水族館</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <style>
+        .event-note {
+            font-size: 13px;
+            color: #888;
+            margin-top: 16px;
+            padding: 16px;
+            background: #f5f7fa;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+        .event-note li { list-style: disc; margin-left: 20px; margin-bottom: 4px; }
+        .seasonal-card-img {
+            width: 100%;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+        }
+        .schedule-section-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--color-primary);
+            margin-bottom: 24px;
+            padding-left: 14px;
+            border-left: 4px solid var(--color-accent);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="header-left">
+                <a href="index.html"><img src="images/logo.png" alt="どひ水族館"></a>
+            </div>
+            <button class="menu" id="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+                <img src="images/menu.svg" width="32" height="32" alt="">
+            </button>
+            <nav id="header-right">
+                <ul>
+                    <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
+        </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="exhibits.html">展示エリア</a></li>
+                <li><a href="events.html" class="active">イベント</a></li>
+                <li><a href="tickets.html">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html">生き物図鑑</a></li>
+                <li><a href="shop.html">ショップ・レストラン</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="about.html">会社概要</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>イベント・ショー情報</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-hero" style="background-image: url(images/background03.png)">
+        <div class="container">
+            <h1>イベント・ショー情報</h1>
+            <p>毎日開催のショーから季節限定イベントまで、楽しみが盛りだくさん</p>
+        </div>
+    </div>
+
+    <!-- 毎日のショースケジュール -->
+    <div class="page-section" id="schedule">
+        <div class="container">
+            <h2 class="section-heading">毎日のショースケジュール</h2>
+            <p class="section-lead">入館料のみでお楽しみいただける無料ショーを毎日開催しています。<br>お気に入りのショーをぜひご覧ください！</p>
+
+            <h3 class="schedule-section-title">🐬 イルカショー</h3>
+            <table class="schedule-table" style="margin-bottom: 40px;">
+                <thead>
+                    <tr>
+                        <th>回</th>
+                        <th>月〜金</th>
+                        <th>土・日・祝</th>
+                        <th>所要時間</th>
+                        <th>会場</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>第1回</td>
+                        <td class="show-time">11:00</td>
+                        <td class="show-time">10:30</td>
+                        <td>約30分</td>
+                        <td>イルカスタジアム</td>
+                    </tr>
+                    <tr>
+                        <td>第2回</td>
+                        <td class="show-time">14:00</td>
+                        <td class="show-time">13:00</td>
+                        <td>約30分</td>
+                        <td>イルカスタジアム</td>
+                    </tr>
+                    <tr>
+                        <td>第3回</td>
+                        <td class="show-time">16:00</td>
+                        <td class="show-time">15:30</td>
+                        <td>約30分</td>
+                        <td>イルカスタジアム</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="schedule-section-title">🦭 アシカショー</h3>
+            <table class="schedule-table" style="margin-bottom: 40px;">
+                <thead>
+                    <tr>
+                        <th>回</th>
+                        <th>月〜金</th>
+                        <th>土・日・祝</th>
+                        <th>所要時間</th>
+                        <th>会場</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>第1回</td>
+                        <td class="show-time">10:30</td>
+                        <td class="show-time">10:00</td>
+                        <td>約20分</td>
+                        <td>アシカステージ</td>
+                    </tr>
+                    <tr>
+                        <td>第2回</td>
+                        <td class="show-time">13:30</td>
+                        <td class="show-time">12:30</td>
+                        <td>約20分</td>
+                        <td>アシカステージ</td>
+                    </tr>
+                    <tr>
+                        <td>第3回</td>
+                        <td class="show-time">15:30</td>
+                        <td class="show-time">14:30</td>
+                        <td>約20分</td>
+                        <td>アシカステージ</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="schedule-section-title">🐧 ペンギンのお散歩</h3>
+            <table class="schedule-table" style="margin-bottom: 32px;">
+                <thead>
+                    <tr>
+                        <th>回</th>
+                        <th>毎日</th>
+                        <th>所要時間</th>
+                        <th>会場</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>第1回</td>
+                        <td class="show-time">11:30</td>
+                        <td>約15分</td>
+                        <td>館内特設ルート</td>
+                    </tr>
+                    <tr>
+                        <td>第2回</td>
+                        <td class="show-time">14:30</td>
+                        <td>約15分</td>
+                        <td>館内特設ルート</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="event-note">
+                <ul>
+                    <li>ショーの開催時間は変更になる場合がございます。当日の館内掲示をご確認ください。</li>
+                    <li>荒天や生き物の体調によりショーを中止・短縮する場合がございます。</li>
+                    <li>ナイトアクアリウム開催日（第2・4土曜日）はスケジュールが変わります。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 季節のイベント -->
+    <div class="page-section-alt" id="seasonal">
+        <div class="container">
+            <h2 class="section-heading">季節のイベント</h2>
+            <p class="section-lead">年間を通じて様々な特別イベントを開催しています。<br>ぜひチェックしてお越しください。</p>
+            <div class="card-grid-3" style="margin-top: 0;">
+                <div class="card">
+                    <div class="seasonal-card-img" style="background: linear-gradient(135deg, #0d1b4b, #1a3a6e);">🌙</div>
+                    <div class="card-body">
+                        <p class="card-label">毎月第2・4土曜日</p>
+                        <h3 class="card-title">ナイトアクアリウム</h3>
+                        <p class="card-text">閉館後の水族館が幻想的な光に包まれます。通常とは異なる夜の生き物たちの姿をお楽しみください。21:00まで営業。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="seasonal-card-img" style="background: linear-gradient(135deg, #e65100, #ff9800);">🎆</div>
+                    <div class="card-body">
+                        <p class="card-label">7月〜8月</p>
+                        <h3 class="card-title">夏の水族館まつり</h3>
+                        <p class="card-text">夏休み期間中の特別企画。魚のエサやり体験、バックヤードツアー、夏限定メニューなど盛りだくさんのイベントです。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="seasonal-card-img" style="background: linear-gradient(135deg, #1a237e, #7986cb);">🎄</div>
+                    <div class="card-body">
+                        <p class="card-label">12月</p>
+                        <h3 class="card-title">クリスマス水族館</h3>
+                        <p class="card-text">クリスマスをテーマにした特別展示とライトアップ。サンタ衣装のスタッフが館内を回り、お子様へのプレゼントも！</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="seasonal-card-img" style="background: linear-gradient(135deg, #b71c1c, #ef5350);">🎍</div>
+                    <div class="card-body">
+                        <p class="card-label">1月1日〜1月3日 ※元日休館</p>
+                        <h3 class="card-title">新春特別展</h3>
+                        <p class="card-text">新年の干支にちなんだ生き物を特集した企画展を開催。縁起の良い展示をご家族でお楽しみください。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="seasonal-card-img" style="background: linear-gradient(135deg, #4a148c, #9c27b0);">🌸</div>
+                    <div class="card-body">
+                        <p class="card-label">3月〜4月</p>
+                        <h3 class="card-title">春の特別企画展</h3>
+                        <p class="card-text">春に産卵・孵化シーズンを迎える生き物の誕生の瞬間を観察できる特別展示。いのちの不思議を体感してください。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="seasonal-card-img" style="background: linear-gradient(135deg, #006064, #00acc1);">🔭</div>
+                    <div class="card-body">
+                        <p class="card-label">随時開催</p>
+                        <h3 class="card-title">バックヤードツアー</h3>
+                        <p class="card-text">普段は見られない飼育スペースや水槽の裏側を見学できるツアー。飼育員が解説しながら案内します。要事前予約。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner-wrapper">
+        <div class="container">
+            <div id="banners">
+                <div class="banner"><a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a></div>
+                <div class="banner"><a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a></div>
+                <div class="banner"><a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footers">
+                <div id="footer-left">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="どひ水族館"></a>
+                    <dl>
+                        <dt>住所</dt><dd>東京都豊島区南池袋１丁目</dd>
+                        <dt>電話番号</dt><dd>000-1234-5678</dd>
+                    </dl>
+                </div>
+                <div id="footer-right">
+                    <dl>
+                        <dt>営業時間</dt><dd>9:00〜18:00（第2・4土曜日は 21:00 まで）</dd>
+                        <dt>休業日</dt><dd>1/1、毎週水曜日</dd>
+                    </dl>
+                </div>
+                <div id="footer-bottom">
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="#">安全への取組</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Copyright"><div class="container"><p>© Dohi Aquarium. All Rights Reserved.</p></div></div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', function () {
+            const isOpen = mobileNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>

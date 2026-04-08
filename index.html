@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
 </head>
 <body>
@@ -27,8 +28,8 @@
             <nav id="header-right">
                 <ul>
                     <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
-                    <li><a href="#" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
-                    <li><a href="#" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
                     <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
                 </ul>
             </nav>
@@ -37,13 +38,33 @@
 
     <nav id="mobile-nav" aria-hidden="true">
         <ul>
-            <li><a href="#">おすすめ情報</a></li>
-            <li><a href="#">モデルコース</a></li>
-            <li><a href="#">施設案内</a></li>
-            <li><a href="#">アクセス</a></li>
-            <li><a href="#">料金</a></li>
-            <li><a href="#" class="nav-ticket">チケット購入</a></li>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
         </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">ホーム</a></li>
+                <li><a href="exhibits.html">展示エリア</a></li>
+                <li><a href="events.html">イベント</a></li>
+                <li><a href="tickets.html">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html">生き物図鑑</a></li>
+                <li><a href="shop.html">ショップ・レストラン</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="about.html">会社概要</a></li>
+            </ul>
+        </div>
     </nav>
 
     <div id="top-wrapper">
@@ -60,11 +81,11 @@
                 </dl>
                 <dl class="subheading ticket">
                     <dt>チケット情報</dt>
-                    <dd><a href="#" class="font-red">チケットを購入する<i class="fas fa-play"></i></a></dd>
+                    <dd><a href="tickets.html" class="font-red">チケットを購入する<i class="fas fa-play"></i></a></dd>
                 </dl>
                 <dl class="subheading">
                     <dt>本日のプログラム</dt>
-                    <dd><a href="#" class="font-blue">10:00〜　イルカショー<i class="fas fa-play font-blue"></i></a></dd>
+                    <dd><a href="events.html#schedule" class="font-blue">10:00〜　イルカショー<i class="fas fa-play font-blue"></i></a></dd>
                 </dl>
             </div>
         </div>
@@ -75,32 +96,32 @@
             <h2 class="section-heading">おすすめ情報</h2>
             <div id="recommendations">
                 <div class="recommendation">
-                    <a href="#" class="overwhite"><img src="images/recommendation1.png" class="recommendation-img" alt="どひ水族館特集" loading="lazy"></a>
+                    <a href="exhibits.html#zones" class="overwhite"><img src="images/recommendation1.png" class="recommendation-img" alt="どひ水族館特集" loading="lazy"></a>
                     <p>見どころを一挙紹介！</p>
-                    <a href="#"><span>どひ水族館特集</span></a>
+                    <a href="exhibits.html#zones"><span>どひ水族館特集</span></a>
                 </div>
                 <div class="recommendation">
-                    <a href="#" class="overwhite"><img src="images/recommendation2.png" class="recommendation-img" alt="年間パス10%OFF" loading="lazy"></a>
+                    <a href="tickets.html#admission" class="overwhite"><img src="images/recommendation2.png" class="recommendation-img" alt="年間パス10%OFF" loading="lazy"></a>
                     <p>オープン記念！</p>
-                    <a href="#"><span>年間パス　10%OFF</span></a>
+                    <a href="tickets.html#admission"><span>年間パス　10%OFF</span></a>
                 </div>
                 <div class="recommendation">
-                    <a href="#" class="overwhite"><img src="images/recommendation3.png" class="recommendation-img" alt="ナイトアクアリウム" loading="lazy"></a>
+                    <a href="events.html#seasonal" class="overwhite"><img src="images/recommendation3.png" class="recommendation-img" alt="ナイトアクアリウム" loading="lazy"></a>
                     <p>毎月第2、4土曜日</p>
-                    <a href="#"><span>ナイトアクアリウム開催！</span></a>
+                    <a href="events.html#seasonal"><span>ナイトアクアリウム開催！</span></a>
                 </div>
             </div>
             <div id="news-wrapper">
                 <h3 id="news">ニュース</h3>
                 <dl id="news-txt">
-                    <dt>2020年1月11日</dt>
-                    <dd><a href="#">水族館がオープンしました！</a></dd>
-                    <dt>2020年1月11日</dt>
-                    <dd><a href="#">水族館がオープンしました！</a></dd>
-                    <dt>2020年1月11日</dt>
-                    <dd><a href="#">水族館がオープンしました！</a></dd>
+                    <dt>2026年3月15日</dt>
+                    <dd><a href="news.html">新展示エリア「深海の神秘」グランドオープン！</a></dd>
+                    <dt>2026年2月20日</dt>
+                    <dd><a href="news.html">ジンベイザメの展示を開始しました</a></dd>
+                    <dt>2026年2月1日</dt>
+                    <dd><a href="news.html">年間パスポート早期購入特典のご案内</a></dd>
                 </dl>
-                <a href="#" id="news-seemore">&gt;&gt; もっと見る</a>
+                <a href="news.html" id="news-seemore">&gt;&gt; もっと見る</a>
             </div>
         </div>
     </div>
@@ -115,7 +136,7 @@
                         <p class="model-big"><span>家族</span>で</p><p class="model-course">たのしむコース</p>
                         <p class="model-small">当コースはベビーカーや小さなお子様と一緒の方を想定した<br>
                             コースとなっており、安心して楽しむことができます。</p>
-                        <a href="#" class="model-seemore">くわしくはコチラ &gt;&gt;</a>
+                        <a href="exhibits.html#course-family" class="model-seemore">くわしくはコチラ &gt;&gt;</a>
                     </div>
                 </div>
                 <div class="model">
@@ -125,7 +146,7 @@
                         <p class="model-small-reverse">当コースは二人だけの時間を楽しみたいカップルに<br>
                             おすすめのコースとなっており、ロマンチックな<br>
                             気分を堪能できます。</p>
-                        <a href="#" class="model-seemore">くわしくはコチラ &gt;&gt;</a>
+                        <a href="exhibits.html#course-couple" class="model-seemore">くわしくはコチラ &gt;&gt;</a>
                     </div>
                 </div>
                 <div class="model">
@@ -134,9 +155,50 @@
                         <p class="model-big"><span>友だち</span>と</p><p class="model-course">たのしむコース</p>
                         <p class="model-small">当コースは友だちとワイワイ楽しみたい方におすすめの<br>
                             コースとなっており、ダイナミックな気分を堪能できます。</p>
-                        <a href="#" class="model-seemore">くわしくはコチラ &gt;&gt;</a>
+                        <a href="exhibits.html#course-friends" class="model-seemore">くわしくはコチラ &gt;&gt;</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="event-section">
+        <div class="container">
+            <h2 class="section-heading">イベント</h2>
+            <p class="event-lead">毎日開催のショーや季節限定イベントをお楽しみください。</p>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>プログラム</th>
+                        <th>開催時間</th>
+                        <th>場所</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="show-name">イルカショー</span></td>
+                        <td><span class="show-time">10:00 / 14:00 / 16:00</span></td>
+                        <td>マリンスタジアム</td>
+                    </tr>
+                    <tr>
+                        <td><span class="show-name">アシカショー</span></td>
+                        <td><span class="show-time">11:30 / 15:30</span></td>
+                        <td>サブアリーナ</td>
+                    </tr>
+                    <tr>
+                        <td><span class="show-name">エサやり体験（ジンベイザメ）</span></td>
+                        <td><span class="show-time">11:00 / 15:00</span></td>
+                        <td>大型回遊水槽</td>
+                    </tr>
+                    <tr>
+                        <td><span class="show-name">ナイトアクアリウム</span></td>
+                        <td><span class="show-time">毎月第2・4土曜 18:30〜</span></td>
+                        <td>館内全体</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="event-btn-wrapper">
+                <a href="events.html#schedule" class="overwhite"><span class="btn">イベント一覧を見る<i class="fas fa-play"></i></span></a>
             </div>
         </div>
     </div>
@@ -145,19 +207,19 @@
         <div class="container">
             <h2 class="section-heading">施設案内</h2>
             <div id="floars">
-                <div class="floar">
-                    <a href="#" class="floar-title">フロアマップ</a>
+                <a href="exhibits.html#floormap" class="floar">
+                    <span class="floar-title">フロアマップ</span>
                     <img src="images/floar1.png" class="floar-image" alt="フロアマップ" loading="lazy">
                     <div class="floar-txt"><p>水族館館内の案内図です。<br>
                         イベントの開催場所も確認していただけます。</p>
                     </div>
-                </div>
-                <div class="floar">
-                    <a href="#" class="floar-title">生き物図鑑</a>
+                </a>
+                <a href="creatures.html" class="floar">
+                    <span class="floar-title">生き物図鑑</span>
                     <img src="images/floar2.png" class="floar-image" alt="生き物図鑑" loading="lazy">
                     <div class="floar-txt"><p>当水族館で暮らす生き物を紹介します。</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -182,7 +244,7 @@
                     </dl>
                 </div>
                 <div class="access-btn-wrapper">
-                    <a href="#" class="overwhite"><span class="btn">お車・バスでお越しの場合<i class="fas fa-play"></i></span></a>
+                    <a href="access.html#transport" class="overwhite"><span class="btn">お車・バスでお越しの場合<i class="fas fa-play"></i></span></a>
                 </div>
             </div>
         </div>
@@ -225,7 +287,31 @@
                 </table>
             </div>
             <div class="admission-btn-wrapper">
-                <a href="#" class="overwhite"><span class="btn">団体でお越しの場合<i class="fas fa-play"></i></span></a>
+                <a href="tickets.html#group" class="overwhite"><span class="btn">団体でお越しの場合<i class="fas fa-play"></i></span></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="shop-section">
+        <div class="container">
+            <h2 class="section-heading">ショップ・レストラン</h2>
+            <div class="shop-cards">
+                <div class="shop-card">
+                    <div class="shop-card-icon">🛍️</div>
+                    <div class="shop-card-body">
+                        <h3 class="shop-card-title">オーシャンショップ</h3>
+                        <p class="shop-card-text">水族館オリジナルグッズや海の生き物をモチーフにした雑貨・ぬいぐるみを多数取り揃えています。大切な方へのお土産にもぜひご利用ください。</p>
+                        <a href="shop.html#shop" class="zone-link">くわしくはコチラ &gt;&gt;</a>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-card-icon">🍽️</div>
+                    <div class="shop-card-body">
+                        <h3 class="shop-card-title">マリンダイニング</h3>
+                        <p class="shop-card-text">海をテーマにしたレストラン。シーフードを中心とした豊富なメニューをご用意しています。水槽を眺めながらお食事をお楽しみいただけます。</p>
+                        <a href="shop.html#restaurant" class="zone-link">くわしくはコチラ &gt;&gt;</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -234,13 +320,13 @@
         <div class="container">
             <div id="banners">
                 <div class="banner">
-                    <a href="#" class="overwhite"><img src="images/banner1.png" alt="バナー1" loading="lazy"></a>
+                    <a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a>
                 </div>
                 <div class="banner">
-                    <a href="#" class="overwhite"><img src="images/banner2.png" alt="バナー2" loading="lazy"></a>
+                    <a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a>
                 </div>
                 <div class="banner">
-                    <a href="#" class="overwhite"><img src="images/banner3.png" alt="バナー3" loading="lazy"></a>
+                    <a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a>
                 </div>
             </div>
         </div>
@@ -268,7 +354,7 @@
                 </div>
                 <div id="footer-bottom">
                     <ul>
-                        <li><a href="#">会社概要</a></li>
+                        <li><a href="about.html">会社概要</a></li>
                         <li><a href="#">安全への取組</a></li>
                         <li><a href="#">個人情報保護方針</a></li>
                         <li><a href="#">採用情報</a></li>
@@ -294,5 +380,6 @@
             mobileNav.setAttribute('aria-hidden', !isOpen);
         });
     </script>
+    <script src="common.js"></script>
 </body>
 </html>

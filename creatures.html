@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="どひ水族館の生き物図鑑。イルカ・クラゲ・ジンベイザメなど、館内で出会える生き物たちを紹介します。">
+    <title>生き物図鑑 | どひ水族館</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <style>
+        .creature-card .card-img-placeholder {
+            font-size: 52px;
+            height: 160px;
+        }
+        .creature-scientific {
+            font-size: 12px;
+            color: #aaa;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+        .filter-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 2px solid var(--color-primary);
+            background: #fff;
+            color: var(--color-primary);
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--color-primary);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="header-left">
+                <a href="index.html"><img src="images/logo.png" alt="どひ水族館"></a>
+            </div>
+            <button class="menu" id="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+                <img src="images/menu.svg" width="32" height="32" alt="">
+            </button>
+            <nav id="header-right">
+                <ul>
+                    <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
+        </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="exhibits.html">展示エリア</a></li>
+                <li><a href="events.html">イベント</a></li>
+                <li><a href="tickets.html">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html" class="active">生き物図鑑</a></li>
+                <li><a href="shop.html">ショップ・レストラン</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="about.html">会社概要</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>生き物図鑑</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-hero" style="background-image: url(images/background02.png)">
+        <div class="container">
+            <h1>生き物図鑑</h1>
+            <p>どひ水族館で出会える生き物たちをご紹介します</p>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <div class="container">
+            <h2 class="section-heading">展示生き物一覧</h2>
+            <p class="section-lead">現在、どひ水族館では約200種・5,000点以上の生き物を展示しています。<br>代表的な生き物をご紹介します。</p>
+
+            <div class="filter-bar">
+                <button class="filter-btn active">すべて</button>
+                <button class="filter-btn">深海ゾーン</button>
+                <button class="filter-btn">サンゴ礁ゾーン</button>
+                <button class="filter-btn">イルカ・アシカゾーン</button>
+                <button class="filter-btn">淡水ゾーン</button>
+            </div>
+
+            <div class="card-grid">
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1565c0, #42a5f5);">🐬</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Tursiops truncatus</p>
+                        <span class="tag tag-blue">イルカ・アシカゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">バンドウイルカ</h3>
+                        <p class="card-text">知性と社会性の高い海棲哺乳類。ショーでは人間との深いコミュニケーションを通じて、ダイナミックな演技を披露します。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #004d40, #26a69a);">🐢</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Chelonia mydas</p>
+                        <span class="tag tag-green">サンゴ礁ゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">アオウミガメ</h3>
+                        <p class="card-text">絶滅危惧種に指定されている大型のウミガメ。優雅に水中を泳ぐ姿は見る人を魅了します。当館では保護活動も行っています。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #6a1b9a, #ce93d8);">🪼</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Chrysaora melanaster</p>
+                        <span class="tag tag-pink">深海ゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">ミズクラゲ</h3>
+                        <p class="card-text">幻想的な光の中でゆらゆらと漂うクラゲ。脳も心臓も持たない神秘的な生き物で、深海ゾーンの人気者です。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #ff6f00, #ffca28);">🐠</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Amphiprion ocellaris</p>
+                        <span class="tag tag-orange">サンゴ礁ゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">カクレクマノミ</h3>
+                        <p class="card-text">イソギンチャクと共生する小型の魚。オレンジと白のコントラストが美しく、子どもたちに大人気の展示生物です。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #0d47a1, #1976d2);">🦈</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Rhincodon typus</p>
+                        <span class="tag tag-blue">サンゴ礁ゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">ジンベイザメ</h3>
+                        <p class="card-text">世界最大の魚類。全長10mを超えることもある巨大な体ながら、プランクトンを食べる温和な性格。大回遊水槽を悠々と泳ぎます。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1a237e, #3949ab);">🐙</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Octopus vulgaris</p>
+                        <span class="tag tag-blue">深海ゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">マダコ</h3>
+                        <p class="card-text">8本の腕を持つ軟体動物。高い知性と擬態能力を持ち、体の色と模様を瞬時に変える能力は驚異的。深海ゾーンで観察できます。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #37474f, #90a4ae);">🐧</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Aptenodytes forsteri</p>
+                        <span class="tag tag-cyan">イルカ・アシカゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">コウテイペンギン</h3>
+                        <p class="card-text">世界最大のペンギン。水中では時速25kmで泳ぐ「海の燕尾服」。毎日2回のお散歩タイムでは間近に歩く姿を見られます。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1b5e20, #66bb6a);">🐍</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Anguilla japonica</p>
+                        <span class="tag tag-green">淡水ゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">ニホンウナギ</h3>
+                        <p class="card-text">絶滅危惧種に指定されている日本固有種。生態の謎が多く、産卵場所が長らく不明だったロマンあふれる魚。当館では保全研究も実施。</p>
+                    </div>
+                </div>
+
+                <div class="card creature-card">
+                    <div class="card-img-placeholder" style="background: linear-gradient(135deg, #bf360c, #ff7043);">🦞</div>
+                    <div class="card-body">
+                        <p class="creature-scientific">Bathynomus giganteus</p>
+                        <span class="tag tag-pink">深海ゾーン</span>
+                        <h3 class="card-title" style="margin-top: 8px;">ダイオウグソクムシ</h3>
+                        <p class="card-text">全長45cmにもなる深海の巨大等脚類。その独特の見た目と謎の多い生態で、来館者から圧倒的な注目を集める人気者です。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="banner-wrapper">
+        <div class="container">
+            <div id="banners">
+                <div class="banner"><a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a></div>
+                <div class="banner"><a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a></div>
+                <div class="banner"><a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footers">
+                <div id="footer-left">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="どひ水族館"></a>
+                    <dl>
+                        <dt>住所</dt><dd>東京都豊島区南池袋１丁目</dd>
+                        <dt>電話番号</dt><dd>000-1234-5678</dd>
+                    </dl>
+                </div>
+                <div id="footer-right">
+                    <dl>
+                        <dt>営業時間</dt><dd>9:00〜18:00（第2・4土曜日は 21:00 まで）</dd>
+                        <dt>休業日</dt><dd>1/1、毎週水曜日</dd>
+                    </dl>
+                </div>
+                <div id="footer-bottom">
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="#">安全への取組</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Copyright"><div class="container"><p>© Dohi Aquarium. All Rights Reserved.</p></div></div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', function () {
+            const isOpen = mobileNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>

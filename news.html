@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="どひ水族館の最新ニュース一覧。新展示・イベント情報・お知らせなどをお届けします。">
+    <title>ニュース | どひ水族館</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <style>
+        .news-category-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+        .news-category-btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 2px solid var(--color-primary);
+            background: #fff;
+            color: var(--color-primary);
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+        .news-category-btn:hover,
+        .news-category-btn.active {
+            background: var(--color-primary);
+            color: #fff;
+        }
+        .news-list-item {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            padding: 24px 0;
+            border-bottom: 1px solid #e0e4ee;
+            transition: all 0.2s;
+        }
+        .news-list-item:hover {
+            padding-left: 8px;
+        }
+        .news-list-date {
+            flex: 0 0 120px;
+            font-size: 14px;
+            color: #888;
+            font-weight: bold;
+            padding-top: 2px;
+        }
+        .news-list-body {}
+        .news-list-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: var(--color-primary);
+            text-decoration: underline;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+        .news-list-title:hover {
+            color: var(--color-gold);
+        }
+        .news-list-excerpt {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+        }
+        .tag-news-event   { background: #e0f4fa; color: #0277bd; }
+        .tag-news-exhibit { background: #e0f5ee; color: #0a7d55; }
+        .tag-news-info    { background: #f0f4ff; color: var(--color-primary); }
+        .tag-news-sale    { background: #fff3e0; color: #e65100; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="header-left">
+                <a href="index.html"><img src="images/logo.png" alt="どひ水族館"></a>
+            </div>
+            <button class="menu" id="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+                <img src="images/menu.svg" width="32" height="32" alt="">
+            </button>
+            <nav id="header-right">
+                <ul>
+                    <li id="li-language"><a href="#" aria-label="言語切替"><img src="images/language.png" alt="言語切替"></a></li>
+                    <li><a href="tickets.html" aria-label="チケット購入"><img src="images/ticket.svg" width="32" height="32" alt="チケット"></a></li>
+                    <li><a href="access.html" aria-label="アクセス"><img src="images/map.svg" width="32" height="32" alt="地図"></a></li>
+                    <li><a href="#" aria-label="メニュー"><img src="images/menu.svg" width="32" height="32" alt="メニュー"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="exhibits.html">展示エリア</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="tickets.html">チケット・料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="creatures.html">生き物図鑑</a></li>
+            <li><a href="shop.html">ショップ・レストラン</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="tickets.html" class="nav-ticket">チケット購入</a></li>
+        </ul>
+    </nav>
+
+    <nav id="global-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="exhibits.html">展示エリア</a></li>
+                <li><a href="events.html">イベント</a></li>
+                <li><a href="tickets.html">チケット・料金</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="creatures.html">生き物図鑑</a></li>
+                <li><a href="shop.html">ショップ・レストラン</a></li>
+                <li><a href="news.html" class="active">ニュース</a></li>
+                <li><a href="about.html">会社概要</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>ニュース</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-hero" style="background-image: url(images/background01.jpg)">
+        <div class="container">
+            <h1>ニュース</h1>
+            <p>どひ水族館からの最新情報をお届けします</p>
+        </div>
+    </div>
+
+    <div class="page-section">
+        <div class="container">
+            <h2 class="section-heading">最新ニュース</h2>
+            <p class="section-lead"></p>
+
+            <div class="news-category-filter">
+                <button class="news-category-btn active">すべて</button>
+                <button class="news-category-btn">イベント</button>
+                <button class="news-category-btn">新展示</button>
+                <button class="news-category-btn">お知らせ</button>
+                <button class="news-category-btn">キャンペーン</button>
+            </div>
+
+            <ul class="news-list">
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2026年3月15日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-exhibit" style="margin-bottom: 8px; display: inline-block;">新展示</span>
+                        <a href="#" class="news-list-title">新展示エリア「深海の神秘」グランドオープンのお知らせ</a>
+                        <p class="news-list-excerpt">リニューアルした深海ゾーンがいよいよオープン。チョウチンアンコウやダイオウグソクムシなど、これまで以上に充実した展示をお楽しみいただけます。光の演出も大幅にアップグレードされました。</p>
+                    </div>
+                </li>
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2026年3月1日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-event" style="margin-bottom: 8px; display: inline-block;">イベント</span>
+                        <a href="#" class="news-list-title">ナイトアクアリウム 春季スケジュールを発表しました</a>
+                        <p class="news-list-excerpt">毎月第2・4土曜日開催のナイトアクアリウム、4〜6月のスケジュールを発表しました。春の特別演出として、桜をテーマにしたライトアップも実施予定です。</p>
+                    </div>
+                </li>
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2026年2月20日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-exhibit" style="margin-bottom: 8px; display: inline-block;">新展示</span>
+                        <a href="#" class="news-list-title">ジンベイザメの展示を開始しました</a>
+                        <p class="news-list-excerpt">世界最大の魚類・ジンベイザメの展示がスタート。全長約6mの個体が大型回遊水槽をゆったりと泳ぐ姿は圧巻です。毎日11:00と15:00にはエサやり観察タイムも実施。</p>
+                    </div>
+                </li>
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2026年2月1日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-sale" style="margin-bottom: 8px; display: inline-block;">キャンペーン</span>
+                        <a href="#" class="news-list-title">【期間限定】年間パスポート早期購入特典のご案内</a>
+                        <p class="news-list-excerpt">2月28日までに年間パスポートをご購入いただいたお客様に、オリジナルトートバッグをプレゼント！さらにオンライン購入なら追加5%OFFでお得にご購入いただけます。</p>
+                    </div>
+                </li>
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2026年1月20日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-info" style="margin-bottom: 8px; display: inline-block;">お知らせ</span>
+                        <a href="#" class="news-list-title">館内バリアフリー設備リニューアル完了のお知らせ</a>
+                        <p class="news-list-excerpt">車いす対応スロープの増設、多目的トイレの拡充、点字ブロックの整備など、バリアフリー設備のリニューアルが完了しました。より多くのお客様に安心してお楽しみいただけます。</p>
+                    </div>
+                </li>
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2025年12月10日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-event" style="margin-bottom: 8px; display: inline-block;">イベント</span>
+                        <a href="#" class="news-list-title">冬季特別展「極地の生き物たち」を開催しました（終了）</a>
+                        <p class="news-list-excerpt">南極・北極に暮らす生き物たちを特集した企画展を開催しました。ホッキョクグマやシロクマの映像展示や、ペンギンの特別観察会など多数のプログラムをご用意しました。</p>
+                    </div>
+                </li>
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2025年11月25日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-event" style="margin-bottom: 8px; display: inline-block;">イベント</span>
+                        <a href="#" class="news-list-title">クリスマス水族館2025 開催のお知らせ（終了）</a>
+                        <p class="news-list-excerpt">12月1日〜25日の期間限定でクリスマス水族館を開催しました。館内をクリスマスカラーにライトアップし、サンタ衣装のスタッフによるプレゼント配布も行いました。</p>
+                    </div>
+                </li>
+
+                <li class="news-list-item">
+                    <span class="news-list-date">2020年1月11日</span>
+                    <div class="news-list-body">
+                        <span class="tag tag-news-info" style="margin-bottom: 8px; display: inline-block;">お知らせ</span>
+                        <a href="#" class="news-list-title">どひ水族館がオープンしました！</a>
+                        <p class="news-list-excerpt">本日、どひ水族館がグランドオープンしました。東京・池袋に新しい水族館が誕生しました。約200種5,000点の生き物たちとともに、皆様のお越しをお待ちしております。</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="banner-wrapper">
+        <div class="container">
+            <div id="banners">
+                <div class="banner"><a href="tickets.html#annual-pass" class="overwhite"><img src="images/banner1.png" alt="お得な年間パスポートのご案内" loading="lazy"></a></div>
+                <div class="banner"><a href="events.html#seasonal" class="overwhite"><img src="images/banner2.png" alt="ロマンチックなナイトアクアリウム" loading="lazy"></a></div>
+                <div class="banner"><a href="access.html#map" class="overwhite"><img src="images/banner3.png" alt="どひ水族館 周辺エリアマップ" loading="lazy"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div id="footers">
+                <div id="footer-left">
+                    <a href="index.html"><img src="images/footer_logo.png" alt="どひ水族館"></a>
+                    <dl>
+                        <dt>住所</dt><dd>東京都豊島区南池袋１丁目</dd>
+                        <dt>電話番号</dt><dd>000-1234-5678</dd>
+                    </dl>
+                </div>
+                <div id="footer-right">
+                    <dl>
+                        <dt>営業時間</dt><dd>9:00〜18:00（第2・4土曜日は 21:00 まで）</dd>
+                        <dt>休業日</dt><dd>1/1、毎週水曜日</dd>
+                    </dl>
+                </div>
+                <div id="footer-bottom">
+                    <ul>
+                        <li><a href="about.html">会社概要</a></li>
+                        <li><a href="#">安全への取組</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="Copyright"><div class="container"><p>© Dohi Aquarium. All Rights Reserved.</p></div></div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', function () {
+            const isOpen = mobileNav.classList.toggle('is-open');
+            this.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script>
+    <script src="common.js"></script>
+</body>
+</html>
